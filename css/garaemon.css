@@ -57,7 +57,7 @@ a:hover {
   line-height: 20px;
   text-align: -webkit-auto;
 }
-#wrapper #content .post .link {
+#wrapper #content .post .link a {
   color: orangeRed;
   font-size: 25px;
 }
