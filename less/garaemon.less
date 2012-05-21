@@ -7,7 +7,7 @@
 @link-font-color: #ffb499;
 @date-font-color: #ccc;
 @date-font-size: 17px;
-@date-font-weight: bold;
+@date-font-weight: normal;
 @font: Helvetica, arial, freesans, clean, sans-serif;
 @width: 850px;
 @content-width: 550px;
@@ -66,10 +66,14 @@ a:hover {
                 color: @date-font-color;
                 font-size: @date-font-size;
                 font-weight: @date-font-weight;
+                text-align: right;
             }
             .text-body {
                 color: @sentence-font-color;
                 font-size:@sentence-font-size;
+                margine-top: 14px;
+                line-height: 20px;
+                text-align: -webkit-auto;
             }
             .link {
                 color: @title-font-color;
