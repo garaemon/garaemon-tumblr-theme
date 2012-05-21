@@ -41,6 +41,9 @@ a:hover {
   color: #333333;
   font-size: 14px;
 }
+#wrapper #content .post .tweet {
+  padding-top: 10px;
+}
 #wrapper #content .post .title a {
   color: orangeRed;
   font-size: 25px;

@@ -67,7 +67,9 @@
         <div class="post">
           
           {block:Photo}
-          {block:Caption}<div class="copy">{Caption}</div>{/block:Caption}
+          {block:Caption}<div class="copy">
+            {Caption}
+          </div>{/block:Caption}
           <div class="media">{LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}" />{LinkCloseTag}</div>
           {/block:Photo}
           
@@ -171,7 +173,12 @@
             <div class="link"><a href="{URL}" {Target}>{Name} &raquo;</a></div>
             {block:Description}<div class="copy">{Description}</div>{/block:Description}
             {/block:Link}
-            
+            <div class="tweet">
+              <a href="https://twitter.com/share"
+                 class="twitter-share-button"
+                 data-url="{Permalink}" data-via="garaemon">Tweet</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
             {block:IfShowTags}
             {block:HasTags}<div class="footer"><div class="tags">Tagged: {block:Tags}<a href="{TagURL}">#{Tag}</a><span class="tag-commas">, </span>{/block:Tags}.</div></div>{/block:HasTags}
             {/block:IfShowTags}
