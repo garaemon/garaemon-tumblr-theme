@@ -4,12 +4,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
     <link rel="stylesheet" href="http://garaemon.github.com/garaemon-tumblr-theme/bootstrap/css/bootstrap.css" />
-    <!-- <link rel="stylesheet" -->
-    <!--       type="text/css" -->
-    <!--       href="http://garaemon.github.com/garaemon-tumblr-theme/css/garaemon.css" /> -->
     <link rel="stylesheet"
           type="text/css"
-          href="http://localhost/~garaemon/garaemon-tumblr-theme/css/garaemon.css" />
+          href="http://garaemon.github.com/garaemon-tumblr-theme/css/garaemon.css" />
+    <!-- <link rel="stylesheet" -->
+    <!--       type="text/css" -->
+    <!--       href="http://localhost/~garaemon/garaemon-tumblr-theme/css/garaemon.css" /> -->
 
     <!-- DEFAULT VARIABLES -->
     <meta name="color:Background" content="white" />
@@ -43,18 +43,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">garaemon.net</a>
+          <a class="brand" href="#">{Title}</a>
         </div>
       </div>
     </div>
     <div id="wrapper">
-      <div id="title">
-        <a href="/">
-          {block:IfHeaderImage}<img src="{image:Header}" />{/block:IfHeaderImage}
-          {block:IfNotHeaderImage}{Title}{/block:IfNotHeaderImage}
-        </a>
-      </div>
-      
       <div id="content">
         
         {block:SearchPage}
@@ -211,76 +204,76 @@
           
         </div>
         
-        <div id="sidebar">
-          <div id="top">
-            <div id="avatar"><a href="/"><img src="{PortraitURL-128}" /></a></div>
-            <div id="description">{Description}</div>
+        <!-- <div id="sidebar"> -->
+        <!--   <div id="top"> -->
+        <!--     <div id="avatar"><a href="/"><img src="{PortraitURL-128}" /></a></div> -->
+        <!--     <div id="description">{Description}</div> -->
             
-            {block:HasPages}
-            <div id="pages">
-              {block:Pages}<a href="{URL}" class="page">{Label}</a>{/block:Pages}
-              <div class="clear"></div>
-            </div>
-            {/block:HasPages}
+        <!--     {block:HasPages} -->
+        <!--     <div id="pages"> -->
+        <!--       {block:Pages}<a href="{URL}" class="page">{Label}</a>{/block:Pages} -->
+        <!--       <div class="clear"></div> -->
+        <!--     </div> -->
+        <!--     {/block:HasPages} -->
             
-            <div id="search">
-              <form action="/search" method="get" id="search-form">
-                <input type="hidden" name="t" value="{Name}" />
-                <input type="hidden" name="scope" value="all_of_tumblr" />
-                <input type="text" name="q" class="query" value="{SearchQuery}" />
-                <input type="submit" value="Search" class="submit" />
-                <div class="clear"></div>
-              </form>
-            </div>
-            <div id="search-scope">
-              <input type="radio" id="search-scope-me" name="scope" checked onclick="document.getElementById('search-form').action='/search'" /> <label for="search-scope-me" onclick="document.getElementById('search-form').action='/search'">My Blog</label>
-              <input type="radio" id="search-scope-all" name="scope" onclick="document.getElementById('search-form').action='http://tumblr.com/search'" /> <label for="search-scope-all" onclick="document.getElementById('search-form').action='http://tumblr.com/search'">All of Tumblr</label>
-            </div>
+        <!--     <div id="search"> -->
+        <!--       <form action="/search" method="get" id="search-form"> -->
+        <!--         <input type="hidden" name="t" value="{Name}" /> -->
+        <!--         <input type="hidden" name="scope" value="all_of_tumblr" /> -->
+        <!--         <input type="text" name="q" class="query" value="{SearchQuery}" /> -->
+        <!--         <input type="submit" value="Search" class="submit" /> -->
+        <!--         <div class="clear"></div> -->
+        <!--       </form> -->
+        <!--     </div> -->
+        <!--     <div id="search-scope"> -->
+        <!--       <input type="radio" id="search-scope-me" name="scope" checked onclick="document.getElementById('search-form').action='/search'" /> <label for="search-scope-me" onclick="document.getElementById('search-form').action='/search'">My Blog</label> -->
+        <!--       <input type="radio" id="search-scope-all" name="scope" onclick="document.getElementById('search-form').action='http://tumblr.com/search'" /> <label for="search-scope-all" onclick="document.getElementById('search-form').action='http://tumblr.com/search'">All of Tumblr</label> -->
+        <!--     </div> -->
             
-            <a href="http://www.tumblr.com/follow/{Name}"><div class="heading" id="followontumblr">Follow on Tumblr</div></a>
+        <!--     <a href="http://www.tumblr.com/follow/{Name}"><div class="heading" id="followontumblr">Follow on Tumblr</div></a> -->
             
-            {block:Twitter}
-            <div id="twitterwrapper" style="display: none">
-              <a href="http://twitter.com/{TwitterUsername}" style="text-decoration: none"><div class="heading" id="twitter">Latest Tweets</div></a>
-              <div id="tweetcontainer"></div>
-              <script type="text/javascript">
-                function recent_tweets(data) {
-                document.getElementById("twitterwrapper").style.display = "block";
-                for(i = 0; i < data.length; i++) {
-                               document.getElementById("tweetcontainer").innerHTML = document.getElementById("tweetcontainer").innerHTML + '<a href="http://twitter.com/{TwitterUsername}/status/' + data[i].id + '"><div class="content">' + data[i].text + '</div></a>';
-                               }
-                               }
-                               </script>
-            </div>
-            {/block:Twitter}
+        <!--     {block:Twitter} -->
+        <!--     <div id="twitterwrapper" style="display: none"> -->
+        <!--       <a href="http://twitter.com/{TwitterUsername}" style="text-decoration: none"><div class="heading" id="twitter">Latest Tweets</div></a> -->
+        <!--       <div id="tweetcontainer"></div> -->
+        <!--       <script type="text/javascript"> -->
+        <!--         function recent_tweets(data) { -->
+        <!--         document.getElementById("twitterwrapper").style.display = "block"; -->
+        <!--         for(i = 0; i < data.length; i++) { -->
+        <!--                        document.getElementById("tweetcontainer").innerHTML = document.getElementById("tweetcontainer").innerHTML + '<a href="http://twitter.com/{TwitterUsername}/status/' + data[i].id + '"><div class="content">' + data[i].text + '</div></a>'; -->
+        <!--                        } -->
+        <!--                        } -->
+        <!--                        </script> -->
+        <!--     </div> -->
+        <!--     {/block:Twitter} -->
             
-            {block:IfShowPeopleIFollow}
-            {block:Following}
-            <div class="heading" id="following">Following</div>
-            <div class="content" id="following-avatars">
-              {block:Followed}<a href="{FollowedURL}"><img src="{FollowedPortraitURL-40}" /></a>{/block:Followed}
-            </div>
-            {/block:Following}
-            {/block:IfShowPeopleIFollow}
+        <!--     {block:IfShowPeopleIFollow} -->
+        <!--     {block:Following} -->
+        <!--     <div class="heading" id="following">Following</div> -->
+        <!--     <div class="content" id="following-avatars"> -->
+        <!--       {block:Followed}<a href="{FollowedURL}"><img src="{FollowedPortraitURL-40}" /></a>{/block:Followed} -->
+        <!--     </div> -->
+        <!--     {/block:Following} -->
+        <!--     {/block:IfShowPeopleIFollow} -->
             
-            <div id="buttons">
-              <div class="row">
-                <div class="button" id="button-rss"><a href="{RSS}">RSS Feed</a></div>
-                <div class="button" id="button-random"><a href="/random">Random</a></div>
-              </div>
-              <div class="clear"></div>
-              <div class="row">
-                <div class="button" id="button-archive"><a href="/archive">Archive</a></div>
-                <div class="button" id="button-mobile"><a href="/mobile">Mobile</a></div>
-              </div>
-              <div class="clear"></div>
-            </div>
+        <!--     <div id="buttons"> -->
+        <!--       <div class="row"> -->
+        <!--         <div class="button" id="button-rss"><a href="{RSS}">RSS Feed</a></div> -->
+        <!--         <div class="button" id="button-random"><a href="/random">Random</a></div> -->
+        <!--       </div> -->
+        <!--       <div class="clear"></div> -->
+        <!--       <div class="row"> -->
+        <!--         <div class="button" id="button-archive"><a href="/archive">Archive</a></div> -->
+        <!--         <div class="button" id="button-mobile"><a href="/mobile">Mobile</a></div> -->
+        <!--       </div> -->
+        <!--       <div class="clear"></div> -->
+        <!--     </div> -->
             
-          </div>
+        <!--   </div> -->
           
-          <div id="bottom"></div>
-          <div id="copyright">&copy; {CopyrightYears} <a href="http://www.tumblr.com">Powered by Tumblr</a></div>
-        </div>
+        <!--   <div id="bottom"></div> -->
+        <!--   <div id="copyright">&copy; {CopyrightYears} <a href="http://www.tumblr.com">Powered by Tumblr</a></div> -->
+        <!-- </div> -->
         
         <div class="clear"></div>
       </div>
