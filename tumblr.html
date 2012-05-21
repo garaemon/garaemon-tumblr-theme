@@ -173,7 +173,7 @@
             {/block:Link}
             
             {block:IfShowTags}
-            {block:HasTags}<div class="footer"><div class="tags">Tagged: {block:Tags}<a href="{TagURL}">{Tag}</a><span class="tag-commas">, </span>{/block:Tags}.</div></div>{/block:HasTags}
+            {block:HasTags}<div class="footer"><div class="tags">Tagged: {block:Tags}<a href="{TagURL}">#{Tag}</a><span class="tag-commas">, </span>{/block:Tags}.</div></div>{/block:HasTags}
             {/block:IfShowTags}
             
             {block:PostNotes}<div class="notecontainer">{PostNotes}</div>{/block:PostNotes}
@@ -190,7 +190,6 @@
             </div>
             {/block:Permalink}
             {/block:IfDisqusShortname}
-            
           </div>
           <div class="bottom"></div>
           {/block:Posts}
