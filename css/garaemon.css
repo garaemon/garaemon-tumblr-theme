@@ -1,0 +1,77 @@
+body {
+  color: red;
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+.clear {
+  clear: both;
+  height: 1px;
+}
+a {
+  color: #ffb499;
+  text-decoration: none;
+}
+a img {
+  border: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+#wrapper {
+  width: 850px;
+  margin: 0 auto;
+}
+#wrapper #content {
+  width: 550px;
+  float: left;
+}
+#wrapper #content .post {
+  margin-bottom: 26px;
+}
+#wrapper #content .post .copy {
+  color: #333333;
+  padding: 0px;
+  font-size: 14px;
+  line-height: 20px;
+}
+#wrapper #content .post .copy p {
+  color: orangeRed;
+  font-size: 25px;
+}
+#wrapper #content .post .title a {
+  color: orangeRed;
+  font-size: 25px;
+  font-weight: bold;
+}
+#wrapper #content .post .date {
+  color: #cccccc;
+  font-size: 17px;
+  font-weight: bold;
+}
+#wrapper #content .post .text-body {
+  color: #333333;
+  font-size: 14px;
+}
+#wrapper #content .post .link {
+  color: orangeRed;
+  font-size: 25px;
+}
+#wrapper #content .post .quotebg {
+  font-family: georgia, serif;
+  font-size: 150px;
+  color: orangeRed;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+}
+#wrapper #content .post .quote {
+  font-size: 20px;
+  padding: 20px 20px 0px 0px;
+}
+#wrapper #sidebar {
+  width: 250px;
+  float: right;
+  color: black;
+}
