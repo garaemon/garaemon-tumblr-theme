@@ -1,6 +1,13 @@
 @background-color: white;
 @title-font-color: orangeRed;
-@link-font-color: #FF6A33;
+@title-font-size: 25px;
+@sentence-font-color: #333;
+@sentence-font-size: 14px;
+@title-font-weight: bold;
+@link-font-color: #ffb499;
+@date-font-color: #ccc;
+@date-font-size: 17px;
+@date-font-weight: bold;
 @font: Helvetica, arial, freesans, clean, sans-serif;
 @width: 850px;
 @content-width: 550px;
@@ -40,6 +47,35 @@ a:hover {
         .post {
             // common settings for each post
             margin-bottom: 26px;
+            .copy {
+                p {
+                    color: @title-font-color;
+                    font-size: @title-font-size;
+                }
+                color: @sentence-font-color;
+                padding: 0px;
+                font-size: 14px;
+                line-height: 20px;
+            }
+            .title a {
+                color: @title-font-color;
+                font-size:  @title-font-size;
+                font-weight: @title-font-weight;
+            }
+            .date {
+                color: @date-font-color;
+                font-size: @date-font-size;
+                font-weight: @date-font-weight;
+            }
+            .text-body {
+                color: @sentence-font-color;
+                font-size:@sentence-font-size;
+            }
+            .link {
+                color: @title-font-color;
+                font-size: @title-font-size;
+            }
+            // quote
             .quotebg {
                 font-family: georgia, serif;
                 font-size: 150px;
@@ -47,9 +83,12 @@ a:hover {
                 opacity: 0.2;
                 filter: alpha(opacity=20);
                 -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
-                position: absolute;
-                top: -25px;
             }
+            .quote {
+                font-size: 20px;
+                padding: 20px 20px 0px 0px;
+            }
+            
         }
     }
     #sidebar {
