@@ -37,8 +37,8 @@ a:hover {
   line-height: 20px;
 }
 #wrapper #content .post .copy p {
-  color: orangeRed;
-  font-size: 25px;
+  color: #333333;
+  font-size: 14px;
 }
 #wrapper #content .post .title a {
   color: orangeRed;
@@ -64,7 +64,7 @@ a:hover {
 #wrapper #content .post .quotebg {
   font-family: georgia, serif;
   font-size: 150px;
-  color: orangeRed;
+  color: #333333;
   opacity: 0.2;
   filter: alpha(opacity=20);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
